@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Norse Bold";
+  src: url(./fornts/Norse-Bold.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  font-family: sans-serif;
+  user-select: none;
+}
+
+.image {
+  width: 30%;
+  background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.image div {
+  font-family: "Norse Bold", sans-serif;
+  font-size: 5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 80px;
+  display: block;
+  padding: 10px 0;
+}
+
+.image div p:last-of-type {
+    font-family: sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 16px;
+}
+
+.image div a {
+    color: #fff;
+}
+
+.form {
+  width: 70%;
+}
+
+.one {
+  font-size: calc(1rem + 0.5vw);
+  font-weight: 600;
+  background-color: #f9fafb;
+  padding: 100px 0 0 50px;
+}
+
+.one p:first-of-type {
+  width: 70%;
+  padding-bottom: 30px;
+}
+
+.one p:last-of-type {
+  padding-bottom: 50px;
+}
+
+.two {
+  font-weight: 600;
+  padding-left: 50px;
+  box-shadow: 7px 8px 18px -12px rgba(0, 0, 0, 0.75);
+}
+
+.two p {
+  font-size: calc(1rem + 0.35vw);
+  padding: 20px 0 0;
+}
+
+.two form fieldset {
+  font-size: calc(0.5rem + 0.25vw);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  display: flex;
+  margin: 20px auto;
+}
+
+fieldset label:last-child {
+  padding-left: 200px;
+}
+
+fieldset input {
+  display: block;
+  width: 15vw;
+  height: 4vh;
+  font-size: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+}
+
+fieldset input:focus {
+  border: 1px solid #00f;
+  outline: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset input[type="password"]:focus:invalid {
+  border-color: #f00;
+  outline: none;
+}
+
+.two form fieldset:last-child {
+  padding-bottom: 40px;
+}
+
+.three {
+  padding-left: 50px;
+}
+
+.three button {
+  width: 200px;
+  height: 35px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #596d48;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 10px 0 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.three p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.three a {
+  text-decoration: none;
+  color: #596d48;
+  font-weight: 600;
+}
