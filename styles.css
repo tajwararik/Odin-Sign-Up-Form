@@ -16,6 +16,7 @@
 main {
   width: 100vw;
   min-height: 100vh;
+  background-color: #f9fafb;
   display: flex;
   font-family: sans-serif;
   user-select: none;
@@ -47,14 +48,14 @@ main {
 }
 
 .image div p:last-of-type {
-    font-family: sans-serif;
-    font-size: 1rem;
-    position: absolute;
-    bottom: 16px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 16px;
 }
 
 .image div a {
-    color: #fff;
+  color: #fff;
 }
 
 .form {
@@ -64,7 +65,6 @@ main {
 .one {
   font-size: calc(1rem + 0.5vw);
   font-weight: 600;
-  background-color: #f9fafb;
   padding: 100px 0 0 50px;
 }
 
@@ -80,6 +80,7 @@ main {
 .two {
   font-weight: 600;
   padding-left: 50px;
+  background-color: #fff;
   box-shadow: 7px 8px 18px -12px rgba(0, 0, 0, 0.75);
 }
 
@@ -121,6 +122,10 @@ fieldset input[type="password"]:focus:invalid {
   outline: none;
 }
 
+.two form fieldset:first-child {
+  text-align: left;
+}
+
 .two form fieldset:last-child {
   padding-bottom: 40px;
 }
@@ -153,4 +158,55 @@ fieldset input[type="password"]:focus:invalid {
   text-decoration: none;
   color: #596d48;
   font-weight: 600;
+}
+
+@media (max-width: 999px) {
+  .image {
+    display: none;
+  }
+
+  .form {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 899px) {
+  .two, .three {
+    padding: 0;
+  }
+
+  .form .two {
+    text-align: center;
+  }
+
+  .two form fieldset {
+    display: block;
+  }
+
+  fieldset label:last-child {
+    padding-left: 0;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  fieldset label input {
+    width: unset;
+    height: unset;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:399px) {
+  .one {
+    font-size: calc(0.75rem + 0.2vw);
+  }
+
+  .three button {
+    font-size: 0.85rem;
+    width: 150px;
+  }
+
+  .three p {
+    font-size: 0.85rem;
+  }
 }

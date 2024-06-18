@@ -2,7 +2,7 @@
 
 This is a project from the The Odin Project.
 
-In this project I have made a sign-up form using HTML and CSS.
+In this project I have made a fully responsive sign-up form using HTML and CSS.
 
 ## Link
 
