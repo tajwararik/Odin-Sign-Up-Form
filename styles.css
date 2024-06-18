@@ -152,6 +152,7 @@ fieldset input[type="password"]:focus:invalid {
 .three p {
   font-size: 1rem;
   font-weight: 500;
+  padding-bottom: 20px;
 }
 
 .three a {
